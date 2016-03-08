@@ -1,0 +1,19 @@
+package:
+  name: imagemagick
+  version: 6.9.3
+
+build:
+  number: 0
+
+source:
+  fn: ImageMagick-6.9.3-7.tar.bz2
+  url: http://www.imagemagick.org/download/ImageMagick-6.9.3-7.tar.bz2
+
+test:
+  commands:
+    - "convert logo: logo.png"
+    - "convert logo: logo.pdf"
+
+about:
+  home: http://www.imagemagick.org/
+  license: Apache
