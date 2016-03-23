@@ -3,10 +3,10 @@ about:
   license: MIT
   summary: Tools for dealing with SAM and BAM files
 build:
-  number: 0
+  number: 1
 package:
   name: samtools
-  version: 0.1.19
+  version: 0.1.19_ccf1da91b
 requirements:
   build:
     - ncurses
