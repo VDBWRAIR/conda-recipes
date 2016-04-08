@@ -1,0 +1,25 @@
+about:
+  home: http://ngopt.sourceforge.net/
+  license: GPLv3
+  summary: de novo assembly & analysis of Illumina sequence data, including the A5 pipeline, A5-miseq, tools to evaluate assembly quality, and scripts to facilitate data submission to NCBI and the RAST annotation system
+build:
+  number: 1
+package:
+  name: a5pipeline
+  version: 20150522
+requirements:
+  build:
+    - java-jdk 8.0.45
+  run:
+    - java-jdk 8.0.45
+source:
+  fn: a5_miseq_linux_20150522.tar.gz
+  url: http://downloads.sourceforge.net/project/ngopt/a5_miseq_linux_20150522.tar.gz
+  #path: a5_miseq_linux_20150522
+test:
+  files:
+    - test.a5.sh
+    - example/
+  commands:
+    - pwd
+    - ./test.a5.sh
